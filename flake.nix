@@ -10,6 +10,7 @@
     let
       system = "x86_64-linux";
       pkgs   = import nixpkgs { inherit system; };
+      imgs   = builtins.attrNames (builtins.readDir ./public/gallery);
     in {
       packages.${system}.default = page.mk {
         page   = ./index.html;
@@ -18,10 +19,22 @@
 
         static = [
           { copy = ./public/iosevka.woff; name = "iosevka.woff"; }
-          { copy = ./public/htmx.min.js;  name = "htmx.min.js"; }
-          { copy = ./public/indynet.png;  name = "indynet.png"; }
-          { copy = ./public/styles.css;   name = "styles.css";  }
+          { copy = ./public/htmx.min.js;  name = "htmx.min.js";  }
+          { copy = ./public/indynet.png;  name = "indynet.png";  }
+          { copy = ./public/styles.css;   name = "styles.css";   }
+          { copy = ./public/gallery;      name = "gallery";      }
         ];
+
+        pages.gallery = {
+          page = ./gallery.html;
+          env  = {
+            images = map (x: "/static/gallery/" + x) imgs;
+          };
+        };
+
+        pages.indy = {
+          page = ./indy.html;
+        };
       };
     };
 }
