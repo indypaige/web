@@ -4,12 +4,14 @@
   inputs      = {
     page.url = "github:indypaige/page";
     nixpkgs.follows = "page/nixpkgs";
+    oxb.url = "github:indypaige/oxb";
   };
 
-  outputs     = { self, nixpkgs, page, ... }:
+  outputs     = { self, nixpkgs, page, oxb, ... }:
     let
       system = "x86_64-linux";
       pkgs   = import nixpkgs { inherit system; };
+      export = oxb.packages.${system}.export ./blog.org;
     in {
       packages.${system}.default = page.mk {
         page   = ./index.html;
@@ -53,6 +55,21 @@
 
           pages.links.page  = ./hx/links.html;
           pages.footer.page = ./hx/footer.html;
+        };
+
+        pages.blog = {
+          page = "${export}/index.html";
+
+          pages = let
+            postsDir   = builtins.readDir "${export}/posts";
+            postsPaths = builtins.attrNames postsDir;
+            postsNames = map (x: let len = builtins.stringLength x;
+                                 in builtins.substring 0 (len - 5) x) postsPaths;
+            postsPages = map (x: {
+              name       = x;
+              value.page = "${export}/posts/${x}.html";
+            }) postsNames;
+          in builtins.listToAttrs postsPages;
         };
       };
     };
