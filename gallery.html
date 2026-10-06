@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="/static/styles.css">
   <link rel="icon" href="/static/favicon.ico">
 
+  <script src="/static/htmx.min.js"></script>
+
   <meta name="description" content="silly website">
   <meta name="author" content="indiegirls">
 </head>
@@ -25,19 +27,7 @@
       </section>
     </main>
 
-    <aside class="sidebar">
-      <section class="box">
-        <h2>Links</h2>
-
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/indy">Indy</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-          </ul>
-        </nav>
-      </section>
-    </aside>
+    <aside class="sidebar" hx-get="/hx/links" hx-trigger="load"></aside>
   </div>
 
   <footer>

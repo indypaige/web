@@ -35,6 +35,12 @@
         pages.indy = {
           page = ./indy.html;
         };
+
+        pages.hx = {
+          page = ./hx/hx.html;
+
+          pages.links.page = ./hx/links.html;
+        };
       };
     };
 }
