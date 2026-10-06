@@ -10,12 +10,20 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v5
+
       - uses: cachix/install-nix-action@v31
+
+      - uses: cachix/cachix-action@v17
+        with:
+          name: indypaige
+          authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - run: |
           nix build
+          mkdir -p public
           cp -r result/* public/
 
       - name: upload
