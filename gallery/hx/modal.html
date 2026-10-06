@@ -1,0 +1,25 @@
+<div
+  id="modal"
+  _="
+    init
+    set #modal-desc.innerText to $modalDesc
+    set #modal-image's   @src to $modalImag
+    end
+
+    on closeModal
+      add .closing
+      then wait for animationend
+      then remove me
+  "
+>
+  <div class="modal-underlay" _="on click trigger closeModal"></div>
+
+  <div class="modal-content box">
+    <img id="modal-image">
+    <p id="modal-desc"></p>
+
+    <button class="box" _="on click trigger closeModal" >
+      Close
+    </button>
+  </div>
+</div>

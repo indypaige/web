@@ -10,25 +10,36 @@
     let
       system = "x86_64-linux";
       pkgs   = import nixpkgs { inherit system; };
-      imgs   = builtins.attrNames (builtins.readDir ./public/gallery);
     in {
       packages.${system}.default = page.mk {
         page   = ./index.html;
         name   = "web";
         src    = self;
 
+        ctx    = {
+          year = 2026;
+        };
+
         static = [
-          { copy = ./public/iosevka.woff; name = "iosevka.woff"; }
-          { copy = ./public/htmx.min.js;  name = "htmx.min.js";  }
-          { copy = ./public/indynet.png;  name = "indynet.png";  }
-          { copy = ./public/styles.css;   name = "styles.css";   }
-          { copy = ./public/gallery;      name = "gallery";      }
+          { copy = ./public/hyperscript.min.js; name = "hyperscript.min.js"; }
+          { copy = ./public/iosevka.woff;       name = "iosevka.woff";       }
+          { copy = ./public/htmx.min.js;        name = "htmx.min.js";        }
+          { copy = ./public/indynet.png;        name = "indynet.png";        }
+          { copy = ./public/styles.css;         name = "styles.css";         }
+          { copy = ./public/gallery;            name = "gallery";            }
         ];
 
         pages.gallery = {
-          page = ./gallery.html;
+          page = ./gallery/gallery.html;
           env  = {
-            images = map (x: "/static/gallery/" + x) imgs;
+            images = [ { path = "/static/gallery/talltree.jpg"; desc = "A tall tree I found walking to the gas station near my apartment in houston texas."; }
+                     ];
+          };
+
+          pages.hx = {
+            page = ./notfound.html;
+
+            pages.modal.page = ./gallery/hx/modal.html;
           };
         };
 
@@ -37,9 +48,10 @@
         };
 
         pages.hx = {
-          page = ./hx/hx.html;
+          page = ./notfound.html;
 
-          pages.links.page = ./hx/links.html;
+          pages.links.page  = ./hx/links.html;
+          pages.footer.page = ./hx/footer.html;
         };
       };
     };

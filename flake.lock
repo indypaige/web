@@ -21,11 +21,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1791223148,
-        "narHash": "sha256-NlDqtNDkpIy+2hNuxLd0kno3fix7af/Qkv74eoLOUt0=",
+        "lastModified": 1791244917,
+        "narHash": "sha256-rfHskoGPHAUwyH/aO4ozFpU7z19nWAWmvI/y7NvaWBY=",
         "owner": "indypaige",
         "repo": "page",
-        "rev": "b6010f01bd23ec6a226b1d4bc2299ed29f5bf0a9",
+        "rev": "adcf51c0ee1046a49cc3cce42a3637cd37a180b8",
         "type": "github"
       },
       "original": {

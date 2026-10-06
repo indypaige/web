@@ -10,9 +10,10 @@
   <link rel="icon" href="/static/favicon.ico">
 
   <script src="/static/htmx.min.js"></script>
+  <script src="/static/hyperscript.min.js"></script>
 
   <meta name="description" content="silly website">
-  <meta name="author" content="indiegirls">
+  <meta name="author" content="Indy Paige">
 </head>
 
 <body>
@@ -23,18 +24,24 @@
   <div class="layout">
     <main class="content">
       <section class="box">
-        <h2>
-          INDYYY
-          <span class="pastel">★</span>
-        </h2>
-
-        <p>
-          Heya!! My name is indy. I'm a recreational programmer who taught myself
-          everything I know.
-
-          I've been programming since I was 7 years old (in java), and eventually
-          learned everything that I do now.
-        </p>
+        <ul>
+          {{ range .images }}
+          <img src="{{ .path }}"
+               height="160"
+               width="120"
+               data-desc="{{ .desc }}"
+               hx-get="hx/modal"
+               hx-target="body"
+               hx-swap="beforeend"
+               hx-trigger="click"
+               _="on click
+                  set $modalDesc to my @data-desc
+                  set $modalImag to my @src
+                  end
+               ">
+          
+          {{ end }}
+        </ul>
       </section>
     </main>
 
