@@ -24,22 +24,24 @@
   <div class="layout">
     <main class="content">
       <section class="box">
-        <ul>
+        <ul class="nodec">
           {{ range .images }}
-          <img src="{{ .path }}"
-               height="160"
-               width="120"
-               data-desc="{{ .desc }}"
-               hx-get="hx/modal"
-               hx-target="body"
-               hx-swap="beforeend"
-               hx-trigger="click"
-               _="on click
-                  set $modalDesc to my @data-desc
-                  set $modalImag to my @src
-                  end
-               ">
-          
+          <li>
+            <img src="{{ .path }}"
+                 class="thumbnail"
+                 height="160"
+                 width="120"
+                 data-desc="{{ .desc }}"
+                 hx-get="hx/modal"
+                 hx-target="body"
+                 hx-swap="beforeend"
+                 hx-trigger="click"
+                 _="on click
+                    set $modalDesc to my @data-desc
+                    set $modalImag to my @src
+                    end
+                 ">
+          </li>
           {{ end }}
         </ul>
       </section>
