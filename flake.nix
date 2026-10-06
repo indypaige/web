@@ -33,6 +33,7 @@
           page = ./gallery/gallery.html;
           env  = {
             images = [ { path = "/static/gallery/talltree.jpg"; desc = "A tall tree I found walking to the gas station near my apartment in houston texas."; }
+                       { path = "/static/gallery/matcha.jpg";   desc = "Visited a local coffee shop in the center of houston. It was nice while it lasted."; }
                      ];
           };
 
