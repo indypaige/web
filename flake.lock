@@ -75,11 +75,11 @@
         "qik": "qik"
       },
       "locked": {
-        "lastModified": 1791321022,
-        "narHash": "sha256-tSwye98MI+JkQOZI4L2/mW4bjq9kAKFG46cwXTZmrGw=",
+        "lastModified": 1791333888,
+        "narHash": "sha256-x1InSCpr0QfxwswBOIw17YDFSB47Ntrn0oXERXR0Wyc=",
         "owner": "indypaige",
         "repo": "oxb",
-        "rev": "fd22494c05bb30b1815685e40b0fa2e4631a52c7",
+        "rev": "d2c0a454d0b9304bd151e8ba09835200229a8836",
         "type": "github"
       },
       "original": {
