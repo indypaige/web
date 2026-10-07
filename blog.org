@@ -5,7 +5,7 @@
 :PROPERTIES:
 :AUTHOR:   Indy Paige
 :PATH:     stability
-:DATA:     [2026-10-06 Tue]
+:DATE:     [2026-10-06 Tue]
 :END:
 
 I always felt a sense of stability where I grew up. I'd sleep, not worrying if I'd
