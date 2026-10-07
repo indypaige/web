@@ -331,3 +331,8 @@ button {
 .nodec > li::marker {
   content: "";
 }
+
+.post-body p {
+    text-align: justify;
+    hyphens: auto;
+}

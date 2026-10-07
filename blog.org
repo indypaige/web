@@ -1,2 +1,31 @@
 #+author: Indy Paige
 #+title:  Blog
+
+* Stability                                                            :blog:
+:PROPERTIES:
+:AUTHOR:   Indy Paige
+:PATH:     stability
+:DATA:     [2026-10-06 Tue]
+:END:
+
+I always felt a sense of stability where I grew up. I'd sleep, not worrying if I'd
+have a place to wake up, buy things like I'd always have a place to put them. That
+I'd always be able to come back from wherever I'm going. But after being "put out"
+at 18 years old, I realized pretty fast how sharp and fragile everything is in the
+"real world".
+
+** Housing is scary
+Getting an apartment for the first time has been one of the scariest experiences in
+my life. It shouldn't be, but it is. I don't understand why leases are so comlex—
+and why everything is so scary and big. As far as I know, it's for someone elses
+benefit than mine. The landlord, probably. But why do they have to make it so
+scary.
+
+** Keeping a job
+Seeing people fly by you in cars while living on the streets is quite a debilitating
+experience. How many of these people are this close to losing everything? Just one
+lost job, could send someone down the worst possible path, and there's often not
+much you can do about it. Once you lose your job, how can you afford rent? food?
+everything, anything. Sure, that's why you're supposed to "save" money, but it's
+not easy when you're living paycheck to paycheck. You can't even live within your
+means.
