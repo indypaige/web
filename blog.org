@@ -1,31 +1,39 @@
 #+author: Indy Paige
 #+title:  Blog
 
-* Stability                                                            :blog:
+* Indy                                                                 :blog:
 :PROPERTIES:
 :AUTHOR:   Indy Paige
-:PATH:     stability
-:DATE:     [2026-10-06 Tue]
+:PATH:     indy
+:DATE:     [2026-11-12 Thu]
 :END:
 
-I always felt a sense of stability where I grew up. I'd sleep, not worrying if I'd
-have a place to wake up, buy things like I'd always have a place to put them. That
-I'd always be able to come back from wherever I'm going. But after being "put out"
-at 18 years old, I realized pretty fast how sharp and fragile everything is in the
-"real world".
+Hello, internet. My name is indy. I wanted to introduce myself to people, for whatever reason.
+I'm 18, and a real nerd. Ish. I love to program and listen to music. I'm a little skittish so,
+if I ever see you in person It should be obvious that I'm not the most social thing ever.
 
-** Housing is scary
-Getting an apartment for the first time has been one of the scariest experiences in
-my life. It shouldn't be, but it is. I don't understand why leases are so comlex
-and why everything is so scary and big. As far as I know, it's for someone elses
-benefit than mine. The landlord, probably. But why do they have to make it so
-scary.
+I have a real passion for the things I do, and I'd like to think that it's my defining trait
+to a degree. I will not compromise on the things I love doing. Especially, programming. It's
+just impossible for me to willingly make shitty software. Obviously, I do so anyway because
+I'm not perfect.
 
-** Keeping a job
-Seeing people fly by you in cars while living on the streets is quite a debilitating
-experience. How many of these people are this close to losing everything? Just one
-lost job, could send someone down the worst possible path, and there's often not
-much you can do about it. Once you lose your job, how can you afford rent? food?
-everything, anything. Sure, that's why you're supposed to "save" money, but it's
-not easy when you're living paycheck to paycheck. You can't even live within your
-means.
+Speaking of programming. It may be a nerdy habit of mine, but there's a lot there that I love.
+I've always wanted to make something useful that people actually use, and that will outlive me.
+Doesn't that seem so interesting? That's my eventual goal, even though I tend to suck at this.
+
+Anyways, I guess that's the end of this little post, just to further introduce myself. It's not
+too much information, because if you want to get to know me, just reach out. I love to talk to
+people. A lot. See you all another day.
+
+** Interests
+- Programming
+- Music
+- Bikes
+
+** Pronouns
+My pronouns in order of most liked to least liked.
+
+- She/It
+- She/Her
+- She/They
+- They/Them

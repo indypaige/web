@@ -35,6 +35,7 @@
           page = ./gallery/gallery.html;
           env  = {
             images = [ { path = "/static/gallery/talltree.jpg"; desc = "A tall tree I found walking to the gas station near my apartment in houston texas."; }
+                       { path = "/static/gallery/trailsun.jpg"; desc = "I was going on a walk, on a bike trail near my place. The sun, It's really pretty"; }
                        { path = "/static/gallery/matcha.jpg";   desc = "Visited a local coffee shop in the center of houston. It was nice while it lasted."; }
                      ];
           };
@@ -44,10 +45,6 @@
 
             pages.modal.page = ./gallery/hx/modal.html;
           };
-        };
-
-        pages.indy = {
-          page = ./indy.html;
         };
 
         pages.hx = {
